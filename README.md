@@ -16,7 +16,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 3.Showcase automation skills and proficiency in AWS tools.
 
 ## High-Level Workflow
-![Architecture Diagram](path-to-image)
+![Architecture Diagram](./Docker.png)
 
 ## Deployment Steps:
 
