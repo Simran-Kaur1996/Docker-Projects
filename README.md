@@ -111,7 +111,7 @@ docker push <ECR_URI>
 ![Architecture Diagram](./step_15_ALB.png)
 * Allow HTTP (port 80) and HTTPS (port 443) traffic from the internet.
 **Container Security Group**
-  ![Architecture Diagram](./Step_15_secruityGRoup.png)
+  ![Architecture Diagram](./securitygroup.png)
 * Allow HTTP/HTTPS traffic only from the ALB security group.
   
 ## Step 7: Deploying with ECS
