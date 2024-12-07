@@ -170,6 +170,6 @@ aws ecr create-repository --repository-name jupiter --region us-east-1
 ## Website deployed
 
 ![Architecture Diagram](./website.png)
-![Architecture Diagram](./website.png)
+![Architecture Diagram](./websitee.png)
 ![Architecture Diagram](./website_in_container.png)
 
