@@ -72,7 +72,9 @@ Configure AWS CLI credentials:
 aws configure
 ```
 ## 4.2 ECR Repository
+
 ![Architecture Diagram](./Step12.png)
+
 * Create an ECR repository:
 ```bash
 aws ecr create-repository --repository-name jupiter --region us-east-1
