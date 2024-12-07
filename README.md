@@ -11,9 +11,9 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 * **Infrastructure Automation**: Setting up IAM users, managing AWS CLI, and automating resource provisioning.
   
 ## Project Highlights
-1.Deploy a containerized web application in a scalable and highly available environment.
-2.Ensure security and cost optimization using private subnets, NAT Gateways, and ALB.
-3.Showcase automation skills and proficiency in AWS tools.
+* Deploy a containerized web application in a scalable and highly available environment.
+* Ensure security and cost optimization using private subnets, NAT Gateways, and ALB.
+* Showcase automation skills and proficiency in AWS tools.
 
 ## High-Level Workflow
 ![Architecture Diagram](./Docker.jpg)
