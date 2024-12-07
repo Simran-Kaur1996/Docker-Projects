@@ -117,6 +117,7 @@ docker push <ECR_URI>
 ## Step 7: Deploying with ECS
 ![Architecture Diagram](./Step_16_ECS.png)
 * Create an ECS Cluster named Jupiter Cluster.
+![Architecture Diagram](./Step_17_task_definition.png)
 * Define a Task Definition:
 *Specify the ECR image, resource allocation (CPU, memory), and network settings.
 3.Launch an ECS Service:
@@ -133,7 +134,7 @@ docker push <ECR_URI>
 * Attach the SSL certificate to the ALB for secure HTTPS traffic handling.
   
 ## Architecture Overview
-![Architecture Diagram](./Step_14.png)
+![Architecture Diagram](./Steps_14.png)
 
 **Three-Tier Components**
 **1 .Public Subnets:**
