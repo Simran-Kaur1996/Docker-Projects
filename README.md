@@ -21,11 +21,12 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 ## Deployment Steps:
 
 ## Step 1: Setting Up GitHub Repository
-1.Install **Git** and **Visual Studio Code**.
-2.Register for a **GitHub account** and set up a key pair.
-3.Add the public SSH key to your GitHub account.
-4.Create a GitHub repository to store the Dockerfile.
-5.Clone the repository:git clone <repository_ssh_url>
+![Architecture Diagram](./Step_1.png)
+* Install **Git** and **Visual Studio Code**.
+* Register for a **GitHub account** and set up a key pair.
+* Add the public SSH key to your GitHub account.
+* Create a GitHub repository to store the Dockerfile.
+* Clone the repository:git clone <repository_ssh_url>
 
 ## Step 2: Docker Image Creation
 1. Sign up for a **Docker Hub account** and install **Docker Desktop**.
