@@ -1,4 +1,4 @@
-### Web Application Deployment with Docker, AWS ECR, and ECS
+## Web Application Deployment with Docker, AWS ECR, and ECS
 
 This project highlights my expertise in **containerization**, **cloud infrastructure**, and secure deployment practices. I designed and deployed a scalable, containerized web application using **Docker**, **AWS Elastic Container Registry (ECR)**, and **Amazon Elastic Container Service (ECS)** within a **three-tier architecture**.
 
