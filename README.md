@@ -125,25 +125,24 @@ docker push <ECR_URI>
 *Use private subnets and an ALB for traffic management.
 
 ## Step 8: Configuring Domain and SSL
-1.**Domain Setup**:
-* Register a domain in Route 53.
-*Create DNS records pointing to the ALB.
-2.**SSL Certificate**:
-*Request an SSL certificate from AWS Certificate Manager (ACM).
-3.**HTTPS Listener**:
-* Attach the SSL certificate to the ALB for secure HTTPS traffic handling.
-  
-## Architecture Overview
+* **Domain Setup**:
+   * Register a domain in Route 53.
+   *Create DNS records pointing to the ALB.
+* **SSL Certificate**:
+   *Request an SSL certificate from AWS Certificate Manager (ACM).
+* **HTTPS Listener**:
+   * Attach the SSL certificate to the ALB for secure HTTPS traffic handling.
+
 ![Architecture Diagram](./Steps_14.png)
 
 **Three-Tier Components**
-**1 .Public Subnets:**
-* Host NAT Gateways, Internet Gateway, and Application Load Balancer.
-**2.Private Subnets:**
-* Host web servers and databases for added security.
-**3.Security Groups:**
-* ALB security group for internet access.
-* Container security group for secure internal communication.
+* **Public Subnets:**
+   * Host NAT Gateways, Internet Gateway, and Application Load Balancer.
+* **Private Subnets:**
+   * Host web servers and databases for added security.
+* **3.Security Groups:**
+   * ALB security group for internet access.
+   * Container security group for secure internal communication.
   
 **Key Commands**
 * Build Docker Image:
