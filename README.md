@@ -63,7 +63,7 @@ docker tag jupiter <username>/jupiterwebsite
 docker push <username>/jupiterwebsite
 ```
 ## Step 4: Configuring AWS Environment
-![Architecture Diagram](./step_10.png)
+![Architecture Diagram](./step11.png)
 ## 4.1 AWS CLI and IAM Setup
 1. Install the **AWS CLI**.
 2. Create an **IAM user** with programmatic access and generate an access key.
@@ -72,15 +72,16 @@ Configure AWS CLI credentials:
 aws configure
 ```
 ## 4.2 ECR Repository
-1.Create an ECR repository:
+![Architecture Diagram](./Step12.png)
+* Create an ECR repository:
 ```bash
 aws ecr create-repository --repository-name jupiter --region us-east-1
 ```
-2.Authenticate Docker with ECR:
+* Authenticate Docker with ECR:
 ```bash
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.us-east-1.amazonaws.com
 ```
-3.Tag and push the image to ECR:
+* Tag and push the image to ECR:
 ```bash
 docker tag jupiter <ECR_URI>
 docker push <ECR_URI>
