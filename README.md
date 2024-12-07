@@ -29,7 +29,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 * Clone the repository:git clone <repository_ssh_url>
 
 ## Step 2: Docker Image Creation
-![Architecture Diagram](./step_2.png)
+![Architecture Diagram](./Step_2.png)
 * Sign up for a **Docker Hub account** and install **Docker Desktop**.
 * Create a **Dockerfile** to define the container.
 * Build the Docker image:
