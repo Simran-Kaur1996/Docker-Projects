@@ -29,7 +29,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 * Clone the repository:git clone <repository_ssh_url>
 
 ## Step 2: Docker Image Creation
-![Architecture Diagram](./Step_2.png)
+![Architecture Diagram](./Step_7.png)
 * Sign up for a **Docker Hub account** and install **Docker Desktop**.
 * Create a **Dockerfile** to define the container.
 * Build the Docker image:
@@ -49,6 +49,7 @@ docker run -dp 80:80 jupiter-website
 docker stop <CONTAINER_ID>
 ```
 ## Step 3: Pushing Image to Docker Hub
+![Architecture Diagram](./Step_8.png)
 1.Create a repository in Docker Hub.
 2.Log in to Docker Hub:
 ```bash
@@ -88,6 +89,7 @@ docker push <ECR_URI>
 * Attach an **Internet Gateway** to the VPC.
   
 **NAT Gateways**
+![Architecture Diagram](./Step_15[creating a nat gateway])
 * Deploy NAT Gateways in the public subnets.
 * Configure private subnets to route traffic through NAT Gateways for outbound internet access.
 
@@ -151,5 +153,5 @@ aws ecr create-repository --repository-name jupiter --region us-east-1
    * Building scalable, secure cloud architectures.
 * Achieved proficiency in DevOps practices and infrastructure automation.
 
-
+## Website
 
