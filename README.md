@@ -50,7 +50,8 @@ docker run -dp 80:80 jupiter-website
 docker stop <CONTAINER_ID>
 ```
 ## Step 3: Pushing Image to Docker Hub
-![Architecture Diagram](./step_10.png)
+![Architecture Diagram](./10.png)
+
 * Create a repository in Docker Hub.
 * Log in to Docker Hub:
 ```bash
