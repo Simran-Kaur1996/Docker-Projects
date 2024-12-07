@@ -21,7 +21,8 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 ## Deployment Steps:
 
 ## Step 1: Setting Up GitHub Repository
-![Architecture Diagram](./step_1.png)
+
+![Architecture Diagram](./Step_7.png)
 * Install **Git** and **Visual Studio Code**.
 * Register for a **GitHub account** and set up a key pair.
 * Add the public SSH key to your GitHub account.
@@ -29,7 +30,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 * Clone the repository:git clone <repository_ssh_url>
 
 ## Step 2: Docker Image Creation
-![Architecture Diagram](./Step_7.png)
+![Architecture Diagram](./step_1.png)
 * Sign up for a **Docker Hub account** and install **Docker Desktop**.
 * Create a **Dockerfile** to define the container.
 * Build the Docker image:
