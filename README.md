@@ -22,7 +22,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 
 ## Step 1: Setting Up GitHub Repository
 
-![Architecture Diagram](./Step_7.png)
+![Architecture Diagram](./step_1.png)
 * Install **Git** and **Visual Studio Code**.
 * Register for a **GitHub account** and set up a key pair.
 * Add the public SSH key to your GitHub account.
@@ -30,7 +30,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 * Clone the repository:git clone <repository_ssh_url>
 
 ## Step 2: Docker Image Creation
-![Architecture Diagram](./step_1.png)
+![Architecture Diagram](./Step_8.png)
 * Sign up for a **Docker Hub account** and install **Docker Desktop**.
 * Create a **Dockerfile** to define the container.
 * Build the Docker image:
@@ -50,7 +50,7 @@ docker run -dp 80:80 jupiter-website
 docker stop <CONTAINER_ID>
 ```
 ## Step 3: Pushing Image to Docker Hub
-![Architecture Diagram](./Step_8.png)
+![Architecture Diagram](./Step_10.png)
 1.Create a repository in Docker Hub.
 2.Log in to Docker Hub:
 ```bash
@@ -84,13 +84,14 @@ docker tag jupiter <ECR_URI>
 docker push <ECR_URI>
 ```
 ## Step 5: Building a Three-Tier AWS Architecture
+![Architecture Diagram](./3-tier vpc.png)
 
 **VPC Configuration**
 * Create a **VPC** with public and private subnets across two Availability Zones (AZs).
 * Attach an **Internet Gateway** to the VPC.
   
 **NAT Gateways**
-![Architecture Diagram](./Step_15[creating a nat gateway])
+![Architecture Diagram](./NAT gateways.png)
 * Deploy NAT Gateways in the public subnets.
 * Configure private subnets to route traffic through NAT Gateways for outbound internet access.
 
@@ -100,13 +101,16 @@ docker push <ECR_URI>
   
 ## Step 6: Security Configuration
 **Application Load Balancer (ALB) Security Group**
+![Architecture Diagram](./step_15_ALB.png)
 * Allow HTTP (port 80) and HTTPS (port 443) traffic from the internet.
 **Container Security Group**
+  ![Architecture Diagram](./Step_15[secruityGRoup].png)
 * Allow HTTP/HTTPS traffic only from the ALB security group.
   
 ## Step 7: Deploying with ECS
-1.Create an ECS Cluster named Jupiter Cluster.
-2.Define a Task Definition:
+![Architecture Diagram](./Step_16_ECS.png)
+* Create an ECS Cluster named Jupiter Cluster.
+* Define a Task Definition:
 *Specify the ECR image, resource allocation (CPU, memory), and network settings.
 3.Launch an ECS Service:
 *Attach the task definition.
@@ -122,6 +126,7 @@ docker push <ECR_URI>
 * Attach the SSL certificate to the ALB for secure HTTPS traffic handling.
   
 ## Architecture Overview
+![Architecture Diagram](./Step_14.png)
 
 **Three-Tier Components**
 **1 .Public Subnets:**
@@ -154,5 +159,8 @@ aws ecr create-repository --repository-name jupiter --region us-east-1
    * Building scalable, secure cloud architectures.
 * Achieved proficiency in DevOps practices and infrastructure automation.
 
-## Website
+## Website deployed
+![Architecture Diagram](./website deployed in docker 1.png)
+![Architecture Diagram](./website.png)
+![Architecture Diagram](./website_in_container.png)
 
