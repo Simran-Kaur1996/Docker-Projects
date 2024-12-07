@@ -50,18 +50,19 @@ docker run -dp 80:80 jupiter-website
 docker stop <CONTAINER_ID>
 ```
 ## Step 3: Pushing Image to Docker Hub
-![Architecture Diagram](./Step_10.png)
-1.Create a repository in Docker Hub.
-2.Log in to Docker Hub:
+![Architecture Diagram](./step_10.png)
+* Create a repository in Docker Hub.
+* Log in to Docker Hub:
 ```bash
 docker login -u <username>
 ```
-3.Tag and push the image
+* Tag and push the image
 ```bash
 docker tag jupiter <username>/jupiterwebsite
 docker push <username>/jupiterwebsite
 ```
 ## Step 4: Configuring AWS Environment
+![Architecture Diagram](./step_10.png)
 ## 4.1 AWS CLI and IAM Setup
 1. Install the **AWS CLI**.
 2. Create an **IAM user** with programmatic access and generate an access key.
@@ -83,6 +84,8 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker tag jupiter <ECR_URI>
 docker push <ECR_URI>
 ```
+![Architecture Diagram](./step_13.png)
+
 ## Step 5: Building a Three-Tier AWS Architecture
 ![Architecture Diagram](./3-tier vpc.png)
 
@@ -91,7 +94,7 @@ docker push <ECR_URI>
 * Attach an **Internet Gateway** to the VPC.
   
 **NAT Gateways**
-![Architecture Diagram](./NAT gateways.png)
+![Architecture Diagram](./Step_15_create_nat.png)
 * Deploy NAT Gateways in the public subnets.
 * Configure private subnets to route traffic through NAT Gateways for outbound internet access.
 
@@ -104,7 +107,7 @@ docker push <ECR_URI>
 ![Architecture Diagram](./step_15_ALB.png)
 * Allow HTTP (port 80) and HTTPS (port 443) traffic from the internet.
 **Container Security Group**
-  ![Architecture Diagram](./Step_15[secruityGRoup].png)
+  ![Architecture Diagram](./Step_15_secruityGRoup.png)
 * Allow HTTP/HTTPS traffic only from the ALB security group.
   
 ## Step 7: Deploying with ECS
