@@ -168,7 +168,8 @@ aws ecr create-repository --repository-name jupiter --region us-east-1
 * Achieved proficiency in DevOps practices and infrastructure automation.
 
 ## Website deployed
-![Architecture Diagram](./website deployed in docker 1.png)
+
+![Architecture Diagram](./website.png)
 ![Architecture Diagram](./website.png)
 ![Architecture Diagram](./website_in_container.png)
 
