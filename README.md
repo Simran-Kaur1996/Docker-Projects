@@ -87,7 +87,7 @@ docker push <ECR_URI>
 ![Architecture Diagram](./step_13.png)
 
 ## Step 5: Building a Three-Tier AWS Architecture
-![Architecture Diagram](./3-tier vpc.png)
+![Architecture Diagram](./3-tier_vpc.png)
 
 **VPC Configuration**
 * Create a **VPC** with public and private subnets across two Availability Zones (AZs).
