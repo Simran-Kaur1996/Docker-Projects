@@ -21,7 +21,7 @@ This project highlights my expertise in **containerization**, **cloud infrastruc
 ## Deployment Steps:
 
 ## Step 1: Setting Up GitHub Repository
-![Architecture Diagram](./Step_1.png)
+![Architecture Diagram](./step_1.png)
 * Install **Git** and **Visual Studio Code**.
 * Register for a **GitHub account** and set up a key pair.
 * Add the public SSH key to your GitHub account.
