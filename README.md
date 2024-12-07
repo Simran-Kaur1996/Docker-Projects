@@ -88,7 +88,7 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker tag jupiter <ECR_URI>
 docker push <ECR_URI>
 ```
-![Architecture Diagram](./step_13.png)
+![Architecture Diagram](./step13.png)
 
 ## Step 5: Building a Three-Tier AWS Architecture
 ![Architecture Diagram](./3-tier_vpc.png)
