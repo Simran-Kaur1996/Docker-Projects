@@ -98,7 +98,7 @@ docker push <ECR_URI>
 * Attach an **Internet Gateway** to the VPC.
   
 **NAT Gateways**
-![Architecture Diagram](./Step_15_create_nat.png)
+![Architecture Diagram](./NATgateways.png)
 * Deploy NAT Gateways in the public subnets.
 * Configure private subnets to route traffic through NAT Gateways for outbound internet access.
 
